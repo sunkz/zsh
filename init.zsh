@@ -5,5 +5,4 @@ cp .git-checkout.zsh ~
 cp .zshrc ~
 
 source ~/.zshrc
-
 zsh .deploy.zsh
