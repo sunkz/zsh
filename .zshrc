@@ -58,6 +58,9 @@ alias gg='bash ~/.deploy.zsh'
 # Homebrew
 eval $(/opt/homebrew/bin/brew shellenv)
 
+# vmr
+export PATH="$HOME/.vmr/vmr.sh:$PATH"
+
 # Git 分支名
 function parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
