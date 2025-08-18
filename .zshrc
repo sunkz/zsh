@@ -71,7 +71,7 @@ setopt PROMPT_SUBST
 export PROMPT='%F{cyan}%1~%f %F{green}$(parse_git_branch)%f %F{normal}$%f '
 export PROMPT_EOL_MARK=''
 
-export CI_ENV=qa
+export CI_ENV='qa'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
