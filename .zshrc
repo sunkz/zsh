@@ -58,10 +58,6 @@ alias gg='bash ~/.deploy.zsh'
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# vfox
-eval "$(vfox activate zsh)"
-
-
 # Git 分支名
 function parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
