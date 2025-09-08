@@ -56,9 +56,6 @@ alias gb='git branch'
 alias gv='git remote -v'
 alias gg='bash ~/.deploy.zsh'
 
-# Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # Git 分支名
 function parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
@@ -67,8 +64,6 @@ function parse_git_branch() {
 setopt PROMPT_SUBST
 export PROMPT='%F{cyan}%1~%f %F{green}$(parse_git_branch)%f %F{normal}$%f '
 export PROMPT_EOL_MARK=''
-
-export CI_ENV="qa"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
